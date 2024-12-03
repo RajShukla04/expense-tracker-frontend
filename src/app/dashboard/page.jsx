@@ -31,8 +31,8 @@ const Dashboard = () => {
         <h1>Welcome, {deta?.fullName || "Guest"}!</h1>
         <p className={styles["welcome-text"]}>
           Manage your finances like a pro. From tracking your daily expenses to
-          analyzing spending trends, we've got you covered. Stay on top of your
-          budget and achieve your financial goals effortlessly.
+          analyzing spending trends, we&apos;ve got you covered. Stay on top of
+          your budget and achieve your financial goals effortlessly.
         </p>
 
         <LogoutButton />
