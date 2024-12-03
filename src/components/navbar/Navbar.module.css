@@ -1,0 +1,97 @@
+/* .nav-main {
+  height: 80px;
+  width: 100%;
+  color: #fff;
+}
+.nav-content {
+  height: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links > a:hover {
+  background-color: #1b1818;
+} */
+/* Main Navbar Container */
+.nav-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e2e;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #29293f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Content Wrapper */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Logo */
+.nav-content img {
+  display: block;
+  border-radius: 50%;
+  background-color: #31314d;
+  padding: 5px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #d4d4d8;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: #86c5ff;
+  color: #1e1e2e;
+}
+
+/* RESPONSIVENESS */
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Very Small Devices */
+@media screen and (max-width: 480px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,105 @@
+/* Login Section */
+.login-section {
+  position: relative;
+  background-image: url("/cityBG.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: #f4f4f9; Soft background color */
+  padding: 20px;
+  flex-direction: column;
+}
+.login-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+/* Heading Style */
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.login-form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Max width for the form */
+  box-sizing: border-box;
+}
+
+/* Input Field Styling */
+.login-input-fields {
+  margin-bottom: 1rem;
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #ff6f61;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, background-color 0.3s ease;
+}
+
+/* Focus input border color */
+.login-input:focus {
+  border-color: #ff6f61;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Error message styling */
+.error {
+  font-size: 0.9rem;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.buttom {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ff6f61; /* Coral color */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.buttom:hover {
+  background-color: #006f6f; /* Darker coral on hover */
+  transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+/* Button Active Effect */
+.buttom:active {
+  transform: scale(0.98); /* Scale down on click */
+}

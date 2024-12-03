@@ -1,0 +1,116 @@
+/* Container */
+.createExpense-section {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Labels */
+.label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Select Dropdown */
+.category select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #86a8e7;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.category select:focus {
+  border-color: #abf2e2;
+  box-shadow: 0 0 8px rgba(168, 242, 226, 0.5);
+}
+
+/* Amount Input */
+.expense-amount input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #86a8e7;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  margin-top: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.expense-amount input:focus {
+  border-color: #abf2e2;
+  box-shadow: 0 0 8px rgba(168, 242, 226, 0.5);
+}
+
+/* Description Text Area */
+.description textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #86a8e7;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  margin-top: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.description textarea:focus {
+  border-color: #abf2e2;
+  box-shadow: 0 0 8px rgba(168, 242, 226, 0.5);
+}
+
+/* Button Styling */
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4ecca3;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: popIn 0.5s ease forwards;
+}
+
+.button:hover {
+  background-color: #37a58a;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pop-in Animation for Button */
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
