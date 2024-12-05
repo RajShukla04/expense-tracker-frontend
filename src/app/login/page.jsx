@@ -54,7 +54,9 @@ const Login = () => {
           body: JSON.stringify(formData),
         }
       );
-      if (!response.ok) throw new Error("Login Failed");
+      if (!response.ok) {
+        const message = await response.text();
+        throw new Error(message || "login failes")
       const data = await response.json();
       window.location.href = "/dashboard";
       console.log(data);
